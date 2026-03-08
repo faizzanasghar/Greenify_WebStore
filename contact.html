@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Greenify</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="images/THE_PLANT_HUB_updated_logo_processed.jpg" alt="Greenify Logo">
+      <h1>Greenify</h1>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-nav">
+      <li class="search-container">
+        <input type="text" class="search-input" placeholder="Search plants...">
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login-page/login.html">Login</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contact Us Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-section">
+        <h2 style="text-align: center; margin-bottom: 20px;">Contact Us</h2>
+        <form id="contact-form" onsubmit="event.preventDefault(); feedback();">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Your Email">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="How can we help you?"></textarea>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Greenify. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>

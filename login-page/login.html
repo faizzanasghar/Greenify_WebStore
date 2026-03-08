@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Greenify</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Inline styles for login specific elements to override or supplement main css */
+    .login-container {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .social-login {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      background: white;
+    }
+
+    .social-btn:hover {
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="../images/THE_PLANT_HUB_updated_logo_processed.jpg" alt="Greenify Logo">
+      <h1>Greenify</h1>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-nav">
+      <li class="search-container">
+        <input type="text" class="search-input" placeholder="Search plants...">
+      </li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../products.html">Products</a></li>
+      <li><a href="../about.html">About Us</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../cart.html">Cart</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Login Section -->
+  <section class="section">
+    <div class="container">
+      <div class="login-container">
+        <h2 style="text-align: center; margin-bottom: 30px;">Welcome Back</h2>
+        <form onsubmit="event.preventDefault(); alert('Login functionality coming soon!');">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div>
+              <input type="checkbox" id="show-pass"
+                onclick="var x = document.getElementById('password'); if (x.type === 'password') { x.type = 'text'; } else { x.type = 'password'; }">
+              <label for="show-pass" style="font-size: 0.9rem;">Show Password</label>
+            </div>
+            <a href="#" style="font-size: 0.9rem; color: var(--primary-color);">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%;">Sign In</button>
+
+          <div style="text-align: center; margin-top: 20px;">
+            <p>Don't have an account? <a href="SignUp.html" style="color: var(--primary-color); font-weight: bold;">Sign
+                Up</a></p>
+          </div>
+
+          <div class="social-login">
+            <button class="social-btn">
+              <img
+                src="https://www.transparentpng.com/thumb/google-logo/colorful-google-logo-transparent-clipart-download-u3DWLj.png"
+                alt="Google" width="20">
+              Google
+            </button>
+            <button class="social-btn">
+              <i class="fab fa-facebook" style="color: #3b5998; font-size: 20px;"></i>
+              Facebook
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Greenify. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../javascript/script.js"></script>
+</body>
+
+</html>

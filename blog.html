@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Greenify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .blog-image {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-content {
+            padding: 20px;
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="images/THE_PLANT_HUB_updated_logo_processed.jpg" alt="Greenify Logo">
+            <h1>Greenify</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-nav">
+            <li class="search-container">
+                <input type="text" class="search-input" placeholder="Search plants...">
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login-page/login.html">Login</a></li>
+            <li>
+                <button class="theme-toggle" onclick="toggleDarkMode()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2>Green Living Blog</h2>
+                <p>Tips, tricks, and inspiration for your plant journey.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('images/indoor-plants/snake-plants.webp');">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Oct 12, 2023</div>
+                        <h3 class="blog-title">Top 5 Air Purifying Plants for Your Home</h3>
+                        <p>Discover the best plants to clean the air and improve your indoor environment.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image" style="background-image: url('images/indoor-plants/peace-lilly.jpg');">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">Sep 28, 2023</div>
+                        <h3 class="blog-title">How to Care for Peace Lilies</h3>
+                        <p>A complete guide to keeping your Peace Lily happy and blooming all year round.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image"
+                        style="background-image: url('images/plants-accessories/gardening-tools.jpg');"></div>
+                    <div class="blog-content">
+                        <div class="blog-date">Sep 15, 2023</div>
+                        <h3 class="blog-title">Essential Gardening Tools for Beginners</h3>
+                        <p>Starting your garden? Here are the must-have tools you need to get started.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Greenify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

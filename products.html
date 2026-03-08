@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Greenify</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="images/THE_PLANT_HUB_updated_logo_processed.jpg" alt="Greenify Logo">
+      <h1>Greenify</h1>
+    </div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-nav">
+      <li class="search-container">
+        <input type="text" class="search-input" placeholder="Search plants...">
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="login-page/login.html">Login</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Product Section -->
+  <section class="section">
+    <div class="container">
+      <div class="products-header">
+        <h2>Explore Our Collection</h2>
+      </div>
+
+      <!-- Indoor Plants -->
+      <div>
+        <h2 class="plants-type">Indoor Plants</h2>
+        <a href="products/indoor.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/indoor-plants/snake-plants.webp" alt="Snake Plant">
+            <div class="product-info">
+              <h3>Snake Plant</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/indoor-plants/peace-lilly.jpg" alt="Peace Lilly">
+            <div class="product-info">
+              <h3>Peace Lilly</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/indoor-plants/spider-plant.jpg" alt="Spider Plant">
+            <div class="product-info">
+              <h3>Spider Plant</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flower Plants -->
+      <div>
+        <h2 class="plants-type">Flower Plants</h2>
+        <a href="products/flower.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/flower-plants/red-rose-plant.webp" alt="Red Rose Plant">
+            <div class="product-info">
+              <h3>Red Rose Plant</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/flower-plants/jasmine-plant.jpg" alt="Jasmine Plant">
+            <div class="product-info">
+              <h3>Jasmine Plant</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/flower-plants/sun-flower-plant.jpg" alt="Sunflower Plant">
+            <div class="product-info">
+              <h3>Sunflower Plant</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Climbers -->
+      <div>
+        <h2 class="plants-type">Climbers</h2>
+        <a href="products/climbers.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/climber-plants/bougainvilleas-plant.jpg" alt="Bougainvilleas Plant">
+            <div class="product-info">
+              <h3>Bougainvilleas Plant</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/climber-plants/rock-trumpet-plant.jpg" alt="Rock Trumpet Plant">
+            <div class="product-info">
+              <h3>Rock Trumpet Plant</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/climber-plants/climbimg-hydrangea-plant.jpg" alt="Climbing Hydrangea Plant">
+            <div class="product-info">
+              <h3>Climbing Hydrangea Plant</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorations -->
+      <div>
+        <h2 class="plants-type">Decorations & Artificial</h2>
+        <a href="products/decorations.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/decoration-and-artificial-plants/cornstalk-dracaena-artificial-plant-in-slate-planter.webp"
+              alt="Cornstalk Artificial Plant">
+            <div class="product-info">
+              <h3>Cornstalk Artificial Plant</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/decoration-and-artificial-plants/croton-artificial-plant.webp"
+              alt="Croton Artificial Plant">
+            <div class="product-info">
+              <h3>Croton Artificial Plant</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/decoration-and-artificial-plants/aritficial-fittonia-hanging-bush-plant.webp"
+              alt="Fittonia Hanging Bush">
+            <div class="product-info">
+              <h3>Fittonia Hanging Bush</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vegetable Seeds -->
+      <div>
+        <h2 class="plants-type">Vegetable Seeds</h2>
+        <a href="products/vegetables.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/vegetable-seeds/tomato-seeds.webp" alt="Tomato Seeds">
+            <div class="product-info">
+              <h3>Tomato Seeds</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/vegetable-seeds/carrot-seeds.webp" alt="Carrot Seeds">
+            <div class="product-info">
+              <h3>Carrot Seeds</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/vegetable-seeds/radish-seeds.webp" alt="Radish Seeds">
+            <div class="product-info">
+              <h3>Radish Seeds</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accessories -->
+      <div>
+        <h2 class="plants-type">Plant Accessories</h2>
+        <a href="products/accessories.html" class="see-more">See More</a>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/plants-accessories/plant-hangers.jpg" alt="Plant Hanger">
+            <div class="product-info">
+              <h3>Plant Hanger</h3>
+              <p>$20</p>
+              <button onclick="a(20 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/plants-accessories/plant-ladder.webp" alt="Plant Ladder">
+            <div class="product-info">
+              <h3>Plant Ladder</h3>
+              <p>$35</p>
+              <button onclick="a(35 , this)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="images/plants-accessories/teak-wood-plant-shelf.webp" alt="Teak Wood Shelf">
+            <div class="product-info">
+              <h3>Teak Wood Shelf</h3>
+              <p>$15</p>
+              <button onclick="a(15 , this)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <button class="btn" onclick="totalalert()" style="margin-right: 10px;">Done Purchasing</button>
+        <button class="btn" onclick="cart()">Go to Cart <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Greenify. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+
+</body>
+
+</html>

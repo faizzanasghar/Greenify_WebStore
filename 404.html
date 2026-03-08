@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Greenify</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="images/THE_PLANT_HUB_updated_logo_processed.jpg" alt="Greenify Logo">
+            <h1>Greenify</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="navbar-nav">
+            <li class="search-container">
+                <input type="text" class="search-input" placeholder="Search plants...">
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login-page/login.html">Login</a></li>
+            <li>
+                <button class="theme-toggle" onclick="toggleDarkMode()">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! It looks like this plant hasn't grown yet.</div>
+        <p>The page you are looking for might have been removed or is temporarily unavailable.</p>
+        <button class="btn" onclick="window.location.href='index.html'" style="margin-top: 20px;">Return Home</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Greenify. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.navbar {
+    color: white;
+}
+
+.navbar img {
+    width: 10%;
+    height: 10%;
+  }
+
+h1 {
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+}
+
+.Name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    position: fixed;
+}
+
+body {
+    background-image: url(../images/img/trees1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#main {
+    border: 2px solid rgb(93, 107, 89);
+    border-radius: 10px;
+    background-color: rgba(108, 101, 101, 0.534);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    display: flex;
+    height: 550px;
+    width: 450px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 3%;
+}
+
+#login {
+    margin-right: 15px;
+    background-color: blue;
+    width: 120px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    text-shadow: 5px 8px 10px white;
+}
+
+#signup {
+    margin-left: 15px;
+    background-color: green;
+    width: 120px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    text-shadow: 0 black;
+    text-shadow: 5px 8px 10px white;
+}
+
+#FP {
+    text-decoration: none;
+    font-size: medium;
+    position: relative;
+    left: 80px;
+    color: gold;
+    /* background-color: black; */
+    /* text-emphasis-color: gold; */
+}
+
+.SP {
+    font-size: medium;
+    position: relative;
+    right: 80px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+#Google {
+    font-size: large;
+    color: black;
+}
+
+#fb {
+    font-size: large;
+    position: relative;
+    bottom: 8px;
+    margin-left: 5px;
+}
+
+#Username {
+    width: 350px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: #00000044;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+    padding: 0px;
+}
+input::placeholder{
+    color: #ffffffa1;
+    font-size: x-large;
+    text-align: center;
+}
+
+#P {
+    position: relative;
+    top: 16px;
+    right: 150px;
+    font-size: x-large;
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+    font-weight: 1000;
+    border-radius: 3px;
+}
+
+#password {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    right: 1px;
+    border: 2px solid black;
+    background-color: #00000044;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+#UN {
+    position: relative; top: 16px; right: 145px;
+    font-weight: 1000;
+    border-radius: 3px;
+    font-size: x-large;
+    color: #ffffff;
+    text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+}
+
+@media(max-width:1024px) {
+    #main {
+        position: absolute;
+        left: 55%;
+    }
+}
+
+@media(max-width:800px) {
+    #main {
+        position: absolute;
+        left: 50%;
+    }
+}
+
+@media(max-width: 620px) {
+    .Name {
+        font-size: 290%;
+    }
+
+    #main {
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+}
+
+@media(max-width:1415px) {
+    body {
+        background-repeat: no-repeat;
+        height: 800px;
+        /* background-attachment: scroll; */
+    }
+}
